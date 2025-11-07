@@ -1,3 +1,8 @@
+---
+geometry: margin=2cm
+output: pdf_document
+---
+
 ***Le Hy Dario***
 
 **DM de Physique-Chimie**
@@ -6,7 +11,7 @@
 
 ## Questions
 
-1. D'après dans le document 2, les matériaux phosphorescents / fluorescents, après avoir absorbé un photon (en l'occurence un photon bleu), s'excitent puis se désexcitent (instanément pour les matériaux fluorescents, cela peut prendre plus ou moins de temps pour les matériaux phosphorescents ). Cette désexitation se fait en passant par plusieurs niveaux d'énergie intermédiaires, chacun emettant un photon propre à son niveau d'énergie. Cela permet d'émettre des photons de longueurs d'ondes différentes de ceux absorbés. Cette désexitation en plusieurs "étages" est donc appelée désexitation en cascade, car le matériaux passe par plusieurs niveaux d'énergie consecutifs lors de la désexitation.
+1. D'après dans le document 2, les matériaux phosphorescents / fluorescents, après avoir absorbé un photon (en l'occurence un photon bleu), s'excitent puis se désexcitent (instanément pour les matériaux fluorescents, cela peut prendre plus ou moins de temps pour les matériaux phosphorescents ). Cette désexitation se fait en passant par plusieurs niveaux d'énergie intermédiaires, chacun emettant un photon propre au niveau d'énergie. Cela permet d'émettre des photons de longueurs d'ondes différentes de ceux absorbés. Cette désexitation en plusieurs "étages" est donc appelée désexitation en cascade, car le matériaux passe par plusieurs niveaux d'énergie consecutifs lors de la désexitation.
 
 2. Selon le document 2, les led "blanches" ici représentées sont composées d'une led bleue recouverte d'un matériaux fluorescent qui absorbe une partie des photons bleus et ré-émet des photons jaunes. Par lecture graphique sur le document 3, le premier pic, d'une valeur d'environ $440nm$, correspond à la lumière émise par la led bleu et le second, d'une valeur d'environ $595nm$ correspond à la lumière jaune émise par le matériaux phosphorescent.
 
@@ -27,7 +32,7 @@ Par lecture graphique du document 3:
  - $\lambda_{jaune} = 595nm = 5,95\cdot10^{-7}m$ (correspond à la longueur d'onde du second pic)
 
 
-On peut associer les valeurs de ces deux pics d'émissions aux niveaux d'énergie du matériaux fluorescent. Comme dit dans la question deux, sur le doc. 3 le pic d'émission à 440 nm (bleu) correspond, selon le doc. 2, à l'énergie absorbée par le matériau pour la transition $E_0 \rightarrow E_1$. Le pic à 595 nm (jaune) correspond à l'énergie libérée lors de la désexcitation $E_1' \rightarrow E_0$ (selon le doc. 4).
+On peut associer les valeurs de ces deux pics d'émissions aux niveaux d'énergie du matériaux fluorescent. Comme dit dans la question deux, sur le doc. 3 le pic d'émission à 440 nm (bleu) correspond, selon le doc. 2, au photon absorbé par le matériau pour la transition $E_0 \rightarrow E_1$. Le pic à 595 nm (jaune) correspond au photon libéré lors de la désexcitation $E_1' \rightarrow E_0$ (selon le doc. 4).
 
 On sait que $\nu = {c\over\lambda}$
 
@@ -51,13 +56,15 @@ Donc le niveau d'énergie $E_1$ a une valeur d'environ $2,83eV$ et le niveau d'�
 
 4. On cherche à calculer la longueur d’onde du photon I-R émis lors de la désexcitation $E_1 \rightarrow E_1'$ :
 
-On calcule la différence entre les valeurs d'énergie $E_1$ et $E_1'$ : $\Delta_{E_1E_1'} = E_1 - E_1' = 4,52\cdot10^{-19} J - 3,34\cdot10^{-19} J= 1,18\cdot10^{-19} J$
+On calcule la différence entre les valeurs d'énergie $E_1$ et $E_1'$ : 
+
+$\Delta_{E_1E_1'} = E_1 - E_1' = 4,52\cdot10^{-19} J - 3,34\cdot10^{-19} J= 1,18\cdot10^{-19} J$
 
 A partir de $\Delta_{E_1E_1'}$, on peut donc calculer la fréquence du photon émis lors de la désexitation de $E_1$ à $E_1'$:
 
 On a: $E = h\nu \iff \nu = \frac{E}{h}$
 
-Donc $\nu_{emis} = \frac{\Delta_{E_1E_1'}J}{h} = \frac{1,18\cdot10^{-19}}{6,63\cdot10^{-34}J\cdot s} \approx 1,78\cdot10^{14}Hz$
+Donc $\nu_{emis} = \frac{\Delta_{E_1E_1'}}{h} = \frac{1,18\cdot10^{-19}}{6,63\cdot10^{-34}J\cdot s} \approx 1,78\cdot10^{14}Hz$
 
 On convertit cette fréquence en longueur d'onde:
 
@@ -79,9 +86,9 @@ Pour percevoir les couleurs, l'homme dispose dans son œil de cônes de receptio
 Il est donc possible de produire une lumière de n'importe quelle couleur avec une lampe rouge, une lampe bleue et une lampe verte. Il suffit ensuite de modifier leur intensité à chacune pour obtenir la couleur recherchée.
 
 Pour la création d'un écran couleur il faut pouvoir mettre ces trois lampes dans chaque pixel. Le but est donc de trouver des dispositifs capables d'émettre une longueur d'onde (couleur) précise, qui puisse être miniaturisé et qui soit assez efficient pour pouvoir en mettre beaucoup sur un espace restreint.
-Les lampes à incandescence sont donc exclues, car difficilement "miniaturisable" et très peu économe en énergie (dû à leur spectre d'émission très étendu dans les infrarouges).
-Les LEDs, plus économes en énergie et très "miniaturisables", sont plus adaptées à cet usage. Les LEDs rouges et verte furent très vite développées, mais il fallût plus de temps pour développer les LEDs bleues.
+Les lampes à incandescence sont donc exclues, car difficilement "miniaturisable" et très peu économes en énergie (dû à leur spectre d'émission très étendu dans les infrarouges).
+Les LEDs, plus économes en énergie et très "miniaturisables", sont plus adaptées à cet usage. Les LEDs rouges et vertes furent vite développées, mais il fallut plus de temps pour développer les LEDs bleues.
 
 La technique de l’émission en cascade ne permet pas non plus de créer de la lumière bleue à partir de rouge ou de vert. En effet celle-ci ne permet que la désexitation par paliers de valeur d'énergie inférieurs au niveau d'énergie atteint lors de l'excitation. La lumière émise a donc fréquence inférieure (et donc un longueur d'onde supérieure) à celle de la lumière absorbée. Or le bleu a une longueur d'onde inférieure au rouge ou au vert. Cette technique n'est donc pas une option pour la création de leds bleues.
 
-Avant le développement des LEDs bleues, la création des écrans couleurs ne pouvait donc être envisagée car le bleu est une couleur nécessaire à la reproduction des autres couleurs selon le modèle trichromatique.
+Avant le développement des LEDs bleues, la création des écrans couleurs ne pouvait donc être envisagée car le bleu est une couleur nécessaire à la reproduction des autres couleurs selon le modèle trichromatique et l’émission en cascade ne permettait pas de faire du bleu à partir de LEDs vertes ou rouges.
